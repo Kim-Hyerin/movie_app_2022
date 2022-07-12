@@ -1,14 +1,15 @@
 import React from "react";
 
-function Movie() {
-  return <h1>I like potato</h1>;
+/* 컴포넌트명은 대문자로 시작 */
+function Food(props) {
+  return <h1>I like { props.fav }</h1>;
 }
 
 function App() {
   return (
   <div>
     <h1>Hello</h1>
-    <Movie />
+    <Food fav="salmon" />
   </div>
   );
 }
